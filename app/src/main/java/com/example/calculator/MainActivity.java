@@ -269,20 +269,20 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if (eat('^')) {
-                    x = Math.pow(x, parseFactor()); // pangkat
+                    x = Math.pow(x, parseFactor()); // hitung pangkat
                 }
 
-                else if (eat('%')) { //persen
+                else if (eat('%')) { //hitung persen
                     x = x/100 ;
 
                 }
 
-                else if (eat('K')) { //keliling
+                else if (eat('K')) { //hitung keliling
                     x = 2 * 3.14 * x  ;
 
                 }
 
-                else if (eat('L')) { //luasling
+                else if (eat('L')) { //hitung luasling
                     x = 3.14 * x * x  ;
 
                 }
