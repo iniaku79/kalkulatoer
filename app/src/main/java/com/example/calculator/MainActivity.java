@@ -15,7 +15,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+	
+	//inisialisasi
         btnac = findViewById(R.id.btnac);
         btnc = findViewById(R.id.btnc);
         keliling = findViewById(R.id.keliling);
@@ -246,8 +247,8 @@ public class MainActivity extends AppCompatActivity {
             }
 
             double parseFactor() {
-                if (eat('+')) return parseFactor(); // unary plus
-                if (eat('-')) return -parseFactor(); // unary minus
+                if (eat('+')) return parseFactor(); // untuk penjumlahan
+                if (eat('-')) return -parseFactor(); // untuk pengurangan
 
                 double x;
                 int startPos = this.pos;
